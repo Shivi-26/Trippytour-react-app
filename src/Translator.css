@@ -1,0 +1,98 @@
+/* Translator.css */
+
+.translator-container {
+    display: flex;
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: auto;
+  }
+  
+  .translate {
+    background-color: lightblue;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 970px; /* Adjust the max-width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border-top-left-radius: 8px; /* Optional: add border-radius for a rounded corner on the image */
+    border-bottom-left-radius: 8px; /* Optional: add border-radius for a rounded corner on the image */
+  }
+  
+  .content-container {
+    flex-grow: 1;
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border-radius: 8px; /* Optional: add border-radius for a rounded box */
+    background-color: #fff; /* Optional: add background color */
+  }
+  
+  .translator-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .translator-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .translator-container label {
+    font-weight: bold;
+  }
+  
+  .translator-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .translator-container button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .translator-container h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .translator-container .translated-text {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    .translator-container {
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center;
+    }
+  
+    .image-container img {
+      border-top-left-radius: 8px; /* Maintain the rounded corner on top */
+      border-bottom-left-radius: 0; /* Remove the rounded corner at the bottom */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .d-flex.flex-column-reverse.flex-md-row {
+      flex-direction: column-reverse;
+    }
+  
+    .ms-5.text-white {
+      margin-top: 20px; /* Adjust margin for better spacing on small screens */
+    }
+  
+    .ms-5 img.responsive-img {
+      width: 100%;
+      height: auto;
+      max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+      max-height: 300px; /* Limit the maximum height of the image in mobile view */
+      margin-top: 20px; /* Adjust margin for better spacing on small screens */
+    }
+  }

@@ -1,0 +1,443 @@
+@import '~leaflet/dist/leaflet.css';
+
+.full-width-height-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .margin {
+    margin-top: 8rem;
+  }
+  
+  .font {
+    font-weight: bold;
+  }
+  .sign_form {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid white; /* Fixed border definition */
+    border-radius: 30px;
+    padding: 40px; /* Adjusted padding */
+    background: white;
+  }
+  .sign_form h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .sign_form .form_content input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+  }
+  
+  .sign_form .form_content label {
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .sign_form .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  
+  }
+  
+  .sign_form .content .number {
+    margin-right: 10px;
+    width: 50%;
+  }
+  
+  .sign_form .content .number .select {
+    width: 100%;
+    border: none;
+  }
+  
+  .sign_form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+    color: #fff;
+  }
+  
+  .images {
+    width: 100%; /* Make the image take up 100% of the width */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 20px 20px 0 0; /* Adjust border-radius */
+  }
+  
+  /* Adjustments for responsiveness */
+  @media (max-width: 768px) {
+    .d-flex {
+      flex-direction: column;
+    }
+  
+    .images-container {
+      margin-top: 13px;
+      /* Adjusted margin-top for smaller screens */
+    }
+   .full-width-height-image{
+    height: 60rem;
+   }
+    
+    .card {
+      height: auto;
+      
+      /* Allow cards to adjust their height based on content */
+    }
+  }
+  
+  
+  /* Add these styles to your existing styles or create a new stylesheet */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-content {
+    flex: 1;
+  }
+  
+  .right-content img {
+    width: 100%;
+    /* Make the image take up 100% of the width */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its natural size */
+  }
+  
+  .right-content {
+    flex: 1;
+    margin-left: 20px;
+    /* Add margin between the two divs */
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .right-content {
+      margin-left: 0;
+      /* Remove margin for small screens */
+      margin-top: 20px;
+      /* Add margin on top for better spacing */
+    }
+  
+    .images-container {
+      margin-top: -1px;
+    }
+  }
+  
+  .card {
+    position: relative;
+    border-radius: 20px;
+    font-size: small;
+    margin-bottom: 20px;
+    margin-right: 17px
+    /* Add margin between cards */
+  }
+  
+  .card .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .images-container {
+    position: absolute;
+    left: -1px;
+    top: calc(65% - 35px/2 - 0.5px);
+    border-radius: 20px 20px 0px 0px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(180, 180, 180);
+  }
+  
+  /* Header.css */
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .custom-navbar .navbar-brand {
+    margin-right: auto; /* This will push the logo to the right on larger screens */
+  }
+  
+  .custom-navbar .navbar-nav {
+    margin-left: auto; /* This will push the navigation links to the right on larger screens */
+  }
+  @media (max-width: 768px) {
+   
+  
+    /* Adjust text and form styles for smaller screens */
+    .text-white {
+      font-size: 12px;
+    }
+  
+    .sign_form {
+      max-width: 100%; /* Allow the form to take up the full width */
+      margin-right: 23px;
+    }
+  
+    .sign_form h2 {
+      font-size: 18px;
+    }
+  
+    .form_content input,
+    .form_content select,
+    .form_content label {
+      font-size: 14px;
+    }
+  
+    .linear-button {
+      font-size: 16px;
+    }
+  }
+  .book {
+    display: flex;
+    justify-content: space-between;
+    /* Align items to the ends */
+    margin-top: 10px;
+    /* Add margin between images and "Book Now" */
+  }
+  
+  .button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    width: 78.34px;
+    height: 24px;
+    right: 15.82px;
+    position: absolute;
+    top: 249px;
+    color: #208FC3;
+  
+  }
+  
+  .img-prop {
+    width: 39rem;
+    height: 28rem;
+  }
+  
+  
+  
+  .text-container {
+    font-size: 13px;
+  }
+  @media (max-width: 768px) {
+    .text-container {
+      justify-content: center;
+      width: 100%;
+      position: relative;
+    }
+    .img-prop{
+      width: 20rem;
+      height: 18rem;
+    }
+  }
+  h3,
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .linear-button {
+    background: linear-gradient(90deg, #0578BE, #77D9D3);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Additional styling for better visibility */
+  .linear-button:hover {
+    background: linear-gradient(90deg, #77D9D3, #0578BE);
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .whitelogo {
+    position: absolute;
+    width: 93.83px;
+    height: 90px;
+    left: 24px;
+    margin-top: -99px;
+  }
+  
+  /* General styling */
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-section {
+    background: rgb(2, 6, 24);
+    color: #fff;
+  }
+  
+  
+  .footer-logo img {
+    max-width: 30%; /* Make the logo responsive */
+  }
+  
+  .footer-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-social-icon span {
+    display: block;
+    font-size: 18px; /* Adjust the size of the social icon span */
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .footer-social-icon a {
+    color: #fff;
+    font-size: 14px; /* Adjust the size of the social icons */
+    margin-right: 15px;
+  }
+  
+  .footer-social-icon i {
+    height: 30px; /* Adjust the size of the social icons */
+    width: 30px; /* Adjust the size of the social icons */
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+  }
+  
+  
+  .responsive-img {
+    max-width: 20%;
+    height: auto;
+  } 
+  .footer-widget{
+    background-color: rgb(2, 2, 71);
+    color: #fff;
+  }
+  
+  
+  .copyright-area {
+    background: rgb(1, 1, 53);
+    padding: 25px 0;
+  }
+  
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For screens smaller than 768px (mobile) */
+  @media (max-width: 767px) {
+    .footer-content {
+      padding: 30px 15px;
+      margin-left: 20px;
+    }
+  
+    .footer-widget ul li {
+      width: 100%;
+      margin-left: 20px;
+    }
+  }
+  
+  /* Add these styles to your existing styles or create a new stylesheet */
+  
+  /* ... (previous styles) ... */
+  
+  .tour {
+    position: relative;
+  }
+  
+  .dubai,
+  .thailand {
+    position: absolute;
+    right: 2%;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For screens smaller than 768px (mobile) */
+  @media (max-width: 767px) {
+    .tour {
+      position: relative;
+    }
+  
+    .dubai,
+    .thailand {
+      position: static;
+      margin-top: 20px; /* Add margin to separate from cards */
+      text-align: center; /* Center the text on smaller screens */
+    }
+  }
+  
+  /* For screens 768px and larger (desktop) */
+  @media (min-width: 768px) {
+   
+    .dubai,
+    .thailand {
+      position: static;
+      text-align: left; /* Align text to the left on desktop */
+      margin-top: 0; /* Reset margin */
+    }
+  }
+  
+  .custom-map {
+    height: 500px;
+    margin-top: 6px;
+  }
+  
+  .google{
+    background-color: #02093B;
+  }
+  
+  .map-image {
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 220px; /* Set the maximum height */
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    object-position: center center; /* Center the image */
+  }
+  
+  @media (max-width: 768px) {
+    .map-image {
+      max-height: 150px; /* Adjust the maximum height for smaller screens if needed */
+    }
+  }
+  .custom-map {
+    height: 500px; /* Adjust the map height as needed */
+  }
+  
+  
